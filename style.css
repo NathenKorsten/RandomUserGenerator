@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2.5vw;
+}
+
+h5 {
+  font-size: 1.5vw;
+}
+
+h6 {
+  display: inline;
+  text-align: center;
+  font-size: 1.3vw;
+}
+
+.loading {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#avatar {
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+  margin-bottom: 2vh;
+  display: none;
+  transition: 0.1s ease-in-out;
+}
+
+hr {
+  margin: 10px;
+  width: 30vw;
+  border: 1px solid white;
+  display: none;
+}
+
+#git {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+  font-family: inherit;
+}
+
+.main-card {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 75vh;
+  width: 50vw;
+  border: 2px solid white;
+}
+.user-info {
+  width: 90vh;
+  padding: 7px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#main {
+  display: none;
+}
+
+#icon {
+  margin-right: 20px;
+}
+
+button:active {
+  outline: none;
+}
+button {
+  margin-top: 15px;
+  padding: 10px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  outline: none;
+  font-family: "Press Start 2P", cursive;
+  font-size: 1vw;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+.rotate-center {
+  -webkit-animation: rotate-center 3s ease-in-out 2s infinite both;
+  animation: rotate-center 2s ease-in-out 1s infinite both;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
